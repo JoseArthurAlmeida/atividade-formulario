@@ -107,7 +107,7 @@ input, textarea {
 }
 
 /* Regras compartilhadas para os dois botões ficarem idênticos */
-.btn-submit, .btn-clear {
+.btn-submit, .btn-clear, .btn-close {
   flex: 1; 
   padding: 12px;
   color: white;
@@ -135,4 +135,12 @@ input, textarea {
 
 .btn-clear:hover {
   background-color: #5a6268;
+}
+
+.btn-close {
+  background-color: #dc3545;
+}
+
+.btn-close:hover {
+  background-color: #c82333;
 }
