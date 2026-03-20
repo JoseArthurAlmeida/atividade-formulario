@@ -1,0 +1,138 @@
+/* Reseta estilos básicos e centraliza o container */
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Estilos do Formulário */
+.form-disciplina {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+}
+
+.half-width {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.btn-submit:hover {
+  background-color: #218838;
+}
+
+/* Estilos do Modal (Sobreposição na tela) */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-content h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+.modal-content p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+/* Agrupa os botões lado a lado */
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 15px; /* A margem agora fica apenas no grupo inteiro */
+}
+
+/* Regras compartilhadas para os dois botões ficarem idênticos */
+.btn-submit, .btn-clear {
+  flex: 1; 
+  padding: 12px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin: 0; /* Garante que nenhuma margem antiga afete o tamanho */
+  height: 48px; /* Define uma altura fixa para garantir que fiquem iguais */
+}
+
+/* Cores específicas de cada botão */
+.btn-submit {
+  background-color: #28a745; 
+}
+
+.btn-submit:hover {
+  background-color: #218838;
+}
+
+.btn-clear {
+  background-color: #6c757d; 
+}
+
+.btn-clear:hover {
+  background-color: #5a6268;
+}
